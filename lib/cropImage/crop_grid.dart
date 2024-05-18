@@ -68,7 +68,7 @@ class _CropGridPainter extends CustomPainter {
           ..isAntiAlias = true);
     canvas.restore();
 
-    if (grid.showCorners)
+    if (grid.showCorners) {
       canvas.drawPath(
           Path() //
             ..addPolygon([
@@ -98,6 +98,7 @@ class _CropGridPainter extends CustomPainter {
             ..strokeCap = StrokeCap.round
             ..strokeJoin = StrokeJoin.miter
             ..isAntiAlias = true);
+    }
 
     canvas.drawPath(
         Path() //

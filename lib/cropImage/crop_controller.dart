@@ -1,11 +1,9 @@
 import 'dart:ui' as ui;
 import 'package:photoeditorapp/cropImage/crop_rect.dart';
-import '../cropImage/crop_rect.dart';
 import '../cropImage/crop_rotation.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'crop_rotation.dart';
 
 /// A controller to control the functionality of [CropImage].
 class CropController extends ValueNotifier<CropControllerValue> {

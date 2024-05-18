@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,7 +8,6 @@ import '../model/filter.dart';
 import '../providers/app_image_provider.dart';
 import '../themes/font.dart';
 import '../themes/palette.dart';
-import 'package:image/image.dart' as img;
 
 class FilterScreen extends StatefulWidget {
   const FilterScreen({Key? key}) : super(key: key);
@@ -26,7 +24,6 @@ class _FilterScreenState extends State<FilterScreen> {
   late AppImageProvider imageProvider;
   ScreenshotController screenshotController = ScreenshotController();
 
-
   @override
   void initState() {
     filters = Filters().list();
@@ -40,6 +37,7 @@ class _FilterScreenState extends State<FilterScreen> {
     return Scaffold(
       backgroundColor: Palette.background,
       appBar: AppBar(
+        leadingWidth: 99.w,
         leading: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
@@ -146,10 +144,8 @@ class _FilterScreenState extends State<FilterScreen> {
                   );
                 }
             )
-              ),
+        ),
       ),
     );
   }
 }
-
-

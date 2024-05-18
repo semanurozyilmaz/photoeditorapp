@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 import 'dart:ui';
-
 import 'package:crop_image/crop_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -21,7 +20,7 @@ class _CropScreenState extends State<CropScreen>{
 
   final controller = CropController(
     aspectRatio: 1,
-    defaultCrop: Rect.fromLTRB(0.1, 0.1, 0.9, 0.9),
+    defaultCrop: const Rect.fromLTRB(0.1, 0.1, 0.9, 0.9),
   );
 
   late AppImageProvider imageProvider;
@@ -37,6 +36,7 @@ class _CropScreenState extends State<CropScreen>{
     return Scaffold(
       backgroundColor: Palette.background,
       appBar: AppBar(
+        leadingWidth: 99.w,
         leading: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
@@ -214,7 +214,7 @@ class _CropScreenState extends State<CropScreen>{
     return InkWell(
       onTap: onPress,
       child: Padding(
-        padding: EdgeInsets.only(left: l, right: r),
+        padding: EdgeInsets.symmetric(horizontal: 15.w),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -239,7 +239,7 @@ class _CropScreenState extends State<CropScreen>{
     return InkWell(
       onTap: onPress,
       child: Padding(
-        padding: EdgeInsets.only(left: l, right: r),
+        padding: const EdgeInsets.only(left:5, right:15),
         child: Text(title,
             style: TextStyle(
                 color: Palette.whiteText,

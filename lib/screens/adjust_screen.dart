@@ -67,6 +67,7 @@ class _AdjustScreenState extends State<AdjustScreen> {
     return Scaffold(
       backgroundColor: Palette.background,
       appBar: AppBar(
+        leadingWidth: 99.w,
         leading: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
@@ -230,8 +231,6 @@ class _AdjustScreenState extends State<AdjustScreen> {
                     'assets/icons/brightness_icon.png',
                     'Brightness',
                     33.0.w,
-                    47.w,
-                    57.w,
                     onPress: () {
                       showSlider(b:true);
                     }
@@ -240,8 +239,6 @@ class _AdjustScreenState extends State<AdjustScreen> {
                     'assets/icons/contrast_icon.png',
                     'Contrast',
                     33.0.w,
-                    57.w,
-                    57.w,
                     onPress: () {
                       showSlider(c:true);
                     }
@@ -250,8 +247,6 @@ class _AdjustScreenState extends State<AdjustScreen> {
                     'assets/icons/saturation_icon.png',
                     'Saturation',
                     39.0.w,
-                    57.w,
-                    57.w,
                     onPress: () {
                       showSlider(s:true);
                     }
@@ -260,8 +255,6 @@ class _AdjustScreenState extends State<AdjustScreen> {
                     'assets/icons/hue_icon.png',
                     'Hue',
                     33.0.w,
-                    57.w,
-                    50.w,
                     onPress: () {
                       showSlider(h:true);
                     }
@@ -274,11 +267,11 @@ class _AdjustScreenState extends State<AdjustScreen> {
     );
   }
 
-  Widget _bottomItem(String icon, String title, double width, double l, double r, {required onPress}){
+  Widget _bottomItem(String icon, String title, double width, {required onPress}){
     return InkWell(
       onTap: onPress,
       child: Padding(
-        padding: EdgeInsets.only(left: l, right: r),
+        padding: EdgeInsets.symmetric(horizontal: 30.w),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

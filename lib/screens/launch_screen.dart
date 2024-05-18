@@ -11,7 +11,7 @@ class _LaunchScreenState extends State<LaunchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
           height: double.infinity,
           child: Image.asset(
             'assets/images/launch_screen.png',

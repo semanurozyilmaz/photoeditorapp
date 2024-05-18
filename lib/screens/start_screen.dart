@@ -81,7 +81,7 @@ class _StartScreenState extends State<StartScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(width:41.w),
-                    Container(
+                    SizedBox(
                       width: 71.w,
                       child: Center(
                         child: Text(
@@ -95,7 +95,7 @@ class _StartScreenState extends State<StartScreen> {
                       ),
                     ),
                     Container(width:200.w),
-                    Container(
+                    SizedBox(
                       width: 66.81.w,
                       child: Center(
                         child: Text(
