@@ -42,7 +42,7 @@ class _FilterScreenState extends State<FilterScreen> {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
           onPressed: () {
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed('/home');
           },
           child: Image.asset(
             'assets/icons/close_button.png',

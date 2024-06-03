@@ -5,34 +5,6 @@ import 'package:photofilters/filters/image_filters.dart';
 
 class ConvolutionFilters{
   List <ConvolutionFilter> list(){
-    /*return <ConvolutionFilter>[
-      ConvolutionFilter(
-        'No Filter',
-        [
-          1,0,0,
-          0,1,0,
-          0,0,1
-        ]
-      ),
-      ConvolutionFilter(
-          'Edge Detection',
-          [
-            -1, -1, -1,
-            -1,  8, -1,
-            -1, -1, -1,
-          ]
-      ),
-      ConvolutionFilter(
-          'Blur',
-          [
-            1/9, 1/9, 1/9,
-            1/9, 1/9, 1/9,
-            1/9, 1/9, 1/9,
-          ]
-      ),
-
-    ];*/
-
     return <ConvolutionFilter>[
       ConvolutionFilter(
         'Identity',

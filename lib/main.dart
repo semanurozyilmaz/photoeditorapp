@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:photoeditorapp/providers/app_image_provider.dart';
 import 'package:photoeditorapp/screens/adjust_screen.dart';
+import 'package:photoeditorapp/screens/border_screen.dart';
 import 'package:photoeditorapp/screens/convolution_filter_screen.dart';
 import 'package:photoeditorapp/screens/crop_rotate_screen.dart';
 import 'package:photoeditorapp/screens/draw_screen.dart';
@@ -56,12 +57,13 @@ class MyApp extends StatelessWidget{
             '/crop': (_) => const CropScreen(),
             '/adjust': (_) => const AdjustScreen(),
             '/filter': (_) => const FilterScreen(),
+            '/convolution': (_) => const ConvolutionFilterScreen(),
             '/fit': (_) => const FitScreen(),
             '/sticker': (_) => const StickerScreen(),
             '/text': (_) => const TextScreen(),
             '/draw': (_) => const DrawScreen(),
             '/mask': (_) => const MaskScreen(),
-            '/convolution': (_) => const ConvolutionFilterScreen()
+            '/border': (_) => const BorderEditScreen(),
             },
             initialRoute: '/',
           );

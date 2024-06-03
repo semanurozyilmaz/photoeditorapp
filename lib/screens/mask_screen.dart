@@ -44,7 +44,7 @@ class _MaskScreenState extends State<MaskScreen> {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
           onPressed: () {
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed('/home');
           },
           child: Image.asset(
             'assets/icons/close_button.png',
@@ -54,7 +54,7 @@ class _MaskScreenState extends State<MaskScreen> {
           ),
         ),
         title: Text(
-          "DRAW",
+          "MASK",
           style: TextStyle(
               color: Palette.titleText,
               fontSize: Font.font24.sp,

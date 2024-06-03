@@ -72,7 +72,7 @@ class _AdjustScreenState extends State<AdjustScreen> {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
           onPressed: () {
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed('/home');
           },
           child: Image.asset(
             'assets/icons/close_button.png',

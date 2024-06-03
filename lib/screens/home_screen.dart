@@ -233,6 +233,14 @@ class _HomeScreenState extends State<HomeScreen>{
                       Navigator.of(context).pushReplacementNamed('/mask');
                     }
                 ),
+                _bottomItem(
+                    'assets/icons/border_icon.png',
+                    'Border',
+                    33.0.w,
+                    onPress: () {
+                      Navigator.of(context).pushReplacementNamed('/border');
+                    }
+                ),
               ],
             ),
           ),

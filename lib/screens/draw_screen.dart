@@ -7,7 +7,6 @@ import '../helper/app_color_picker.dart';
 import '../helper/pixel_color_image.dart';
 import '../providers/app_image_provider.dart';
 import 'package:provider/provider.dart';
-
 import '../themes/font.dart';
 import '../themes/palette.dart';
 
@@ -42,7 +41,7 @@ class _DrawScreenState extends State<DrawScreen> {
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent),
           onPressed: () {
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed('/home');
           },
           child: Image.asset(
             'assets/icons/close_button.png',
