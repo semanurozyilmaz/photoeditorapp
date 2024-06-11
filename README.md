@@ -1,4 +1,4 @@
-# photoeditorapp
+# PHOTO EDITING APP : IMAGE WİZARD
 
 A new Flutter project.
 
