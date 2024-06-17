@@ -38,3 +38,6 @@ To run this project locally, follow these steps:
    ```sh
    flutter run
 
+You can download the latest version of the APK and `Runner.zip` file from the link below:
+
+- [Download APK and Runner file ](https://github.com/semanurozyilmaz/photoeditorapp/blob/main/apk%20ve%20runner.zip)
