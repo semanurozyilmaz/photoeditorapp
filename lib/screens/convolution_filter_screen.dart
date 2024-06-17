@@ -85,17 +85,17 @@ class _FilterScreenState extends State<ConvolutionFilterScreen> {
           builder: (BuildContext context, value, Widget? child) {
             if (value.currentImage != null) {
               return Screenshot(
-                controller: screenshotController,
-                child: FilteredImageWidget(
-                  filter: currentFilter.filter,
-                  image: img.decodeImage(value.currentImage!)!,
-                  successBuilder: (imageBytes) =>
-                      Image.memory(imageBytes as Uint8List),
-                  errorBuilder: () => Container(color: Colors.white,),
-                  loadingBuilder: () => Container(
-                    child: const Center(child: CircularProgressIndicator()),
-                  ),
-                )
+                  controller: screenshotController,
+                  child: FilteredImageWidget(
+                    filter: currentFilter.filter,
+                    image: img.decodeImage(value.currentImage!)!,
+                    successBuilder: (imageBytes) =>
+                        Image.memory(imageBytes as Uint8List),
+                    errorBuilder: () => Container(color: Colors.white,),
+                    loadingBuilder: () => Container(
+                      child: const Center(child: CircularProgressIndicator()),
+                    ),
+                  )
               );
             }
             return const Center(

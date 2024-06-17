@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:photoeditorapp/themes/font.dart';
 import 'package:provider/provider.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:photoeditorapp/helper/app_image_picker.dart';
 import '../providers/app_image_provider.dart';
 import 'package:photoeditorapp/themes/palette.dart';
